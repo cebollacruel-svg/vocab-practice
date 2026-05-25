@@ -20,15 +20,15 @@
 <!-- ============ START SCREEN ============ -->
 <section id="startScreen" class="screen start-screen">
     <div class="start-card">
-        <div class="logo-badge">🧠✨</div>
-        <p class="kicker">Colegio Nocturno de Cariari · English</p>
+        <div class="logo-badge">UCR</div>
+        <p class="kicker">University of Costa Rica · English</p>
         <h1>Vocabulary <span>Lab</span></h1>
         <p class="lead">Practice the words from <strong>Unit 4 — Ancient Wisdom</strong> and <strong>Unit 6 — Together Alone</strong>. Play, flip, match and beat your score!</p>
 
-        <label class="name-label" for="studentName">First, write your full name 👇</label>
+        <label class="name-label" for="studentName">First, write your full name:</label>
         <input type="text" id="studentName" placeholder="e.g. María Fernández" autocomplete="off">
 
-        <button id="enterBtn" class="big-btn">Let's practice →</button>
+        <button type="button" id="enterBtn" class="big-btn">Let's practice</button>
         <p class="tiny-note">Your participation is saved automatically for your teacher.</p>
     </div>
 </section>
@@ -37,41 +37,37 @@
 <section id="hubScreen" class="screen" hidden>
     <header class="topbar">
         <div class="topbar-left">
-            <span class="hello">Hi, <strong id="helloName">student</strong> 👋</span>
+            <span class="hello">Hi, <strong id="helloName">student</strong></span>
         </div>
         <div class="topbar-right">
-            <span class="streak-pill">⭐ <span id="pointsCount">0</span> pts</span>
+            <span class="streak-pill"><span id="pointsCount">0</span> pts</span>
         </div>
     </header>
 
     <div class="hub">
         <h2 class="hub-title">Choose an activity</h2>
-        <p class="hub-sub">Complete all four to finish your practice. ✅ appears when you're done.</p>
+        <p class="hub-sub">Complete all four to finish your practice.</p>
 
         <div class="mode-grid">
-            <button class="mode-card" data-mode="flashcards">
-                <span class="mode-emoji">🃏</span>
+            <button type="button" class="mode-card" data-mode="flashcards">
                 <span class="mode-name">Flashcards</span>
                 <span class="mode-desc">Flip the cards and learn the meaning.</span>
                 <span class="mode-check" id="check-flashcards">○</span>
             </button>
 
-            <button class="mode-card" data-mode="match">
-                <span class="mode-emoji">🔗</span>
+            <button type="button" class="mode-card" data-mode="match">
                 <span class="mode-name">Match It</span>
                 <span class="mode-desc">Drag each word to its meaning.</span>
                 <span class="mode-check" id="check-match">○</span>
             </button>
 
-            <button class="mode-card" data-mode="opposites">
-                <span class="mode-emoji">↔️</span>
+            <button type="button" class="mode-card" data-mode="opposites">
                 <span class="mode-name">Opposites</span>
                 <span class="mode-desc">Tap the opposite of each word.</span>
                 <span class="mode-check" id="check-opposites">○</span>
             </button>
 
-            <button class="mode-card" data-mode="forms">
-                <span class="mode-emoji">🧩</span>
+            <button type="button" class="mode-card" data-mode="forms">
                 <span class="mode-name">Word Forms</span>
                 <span class="mode-desc">Type the correct form of the word.</span>
                 <span class="mode-check" id="check-forms">○</span>
@@ -83,7 +79,7 @@
             <span id="hubProgressText">0 / 4 activities completed</span>
         </div>
 
-        <button id="finishBtn" class="finish-btn" disabled>Finish & send participation 🎉</button>
+        <button type="button" id="finishBtn" class="finish-btn" disabled>Finish & send participation</button>
         <div id="finishMsg" class="finish-msg"></div>
     </div>
 </section>
@@ -91,14 +87,14 @@
 <!-- ============ ACTIVITY STAGE ============ -->
 <section id="stageScreen" class="screen" hidden>
     <header class="topbar">
-        <button id="backBtn" class="back-btn">← Menu</button>
+        <button type="button" id="backBtn" class="back-btn">Back to Menu</button>
         <span class="stage-title" id="stageTitle">Activity</span>
-        <span class="streak-pill">⭐ <span id="pointsCount2">0</span> pts</span>
+        <span class="streak-pill"><span id="pointsCount2">0</span> pts</span>
     </header>
     <div id="stage" class="stage"></div>
 </section>
 
-<footer class="foot">Colegio Nocturno de Cariari · Vocabulary Lab · Teacher: Saiden Ortiz Gómez</footer>
+<footer class="foot">University of Costa Rica · Vocabulary Lab · Teacher: Roberto Mesen</footer>
 
 <canvas id="confetti"></canvas>
 
