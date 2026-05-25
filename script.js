@@ -3,7 +3,7 @@
    Colegio Nocturno de Cariari · Teacher: Saiden Ortiz Gómez
    ===================================================================== */
 
-// PASTE YOUR APPS SCRIPT URL HERE (the Vocabulary Results deployment)
+// 🔧 PASTE YOUR APPS SCRIPT URL HERE (the Vocabulary Results deployment)
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwFz2G1LF2yQLcgsfVsjzfvhzBvU0ECEdTlkLkGqSjAcydjZOGZd-Keu0L-DFmzcvzF/exec";
 
 /* ---------------------------------------------------------------------
@@ -11,36 +11,36 @@ const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwFz2G1LF2yQLcg
 --------------------------------------------------------------------- */
 const FLASHCARDS = [
     // ---- Unit 4 ----
-    {w:"abundance", pos:"noun", def:"A very large quantity of something.", ex:"There was an abundance of food at the party."},
-    {w:"align", pos:"verb", def:"To arrange things in a straight line or correct position.", ex:"The windows must align properly for good feng shui."},
-    {w:"skeptical", pos:"adjective", def:"Having doubts; not easily convinced.", ex:"She was skeptical about feng shui at first."},
-    {w:"transcend", pos:"verb", def:"To go beyond normal limits.", ex:"Great ideas can transcend cultures and time."},
-    {w:"vital", pos:"adjective", def:"Extremely important or necessary.", ex:"Good sleep is vital for your health."},
-    {w:"anecdote", pos:"noun", def:"A short, interesting personal story.", ex:"He told a funny anecdote about his trip."},
-    {w:"frown upon", pos:"phrase", def:"To disapprove of something.", ex:"Many teachers frown upon using phones in class."},
-    {w:"enhance", pos:"verb", def:"To improve the quality of something.", ex:"Good lighting can enhance a room."},
-    {w:"sharp", pos:"adjective", def:"Quick, clever, and intelligent.", ex:"She's a sharp, peppy businesswoman."},
-    {w:"in the midst of", pos:"phrase", def:"In the middle of (a situation or process).", ex:"I'm in the midst of important negotiations."},
-    {w:"work around", pos:"phrase", def:"To find a way to deal with a problem.", ex:"We can work around the bad lighting."},
-    {w:"talk into", pos:"phrase", def:"To persuade someone to do something.", ex:"Master Sun talked me into keeping the property."},
-    {w:"catch off guard", pos:"phrase", def:"To surprise someone when they are not ready.", ex:"His question caught me off guard."},
-    {w:"hard-bitten", pos:"adjective", def:"Tough and very experienced.", ex:"Hard-bitten businessmen often tease him."},
+    {w:"abundance", pos:"noun", emoji:"🌾", def:"A very large quantity of something.", ex:"There was an abundance of food at the party."},
+    {w:"align", pos:"verb", emoji:"📐", def:"To arrange things in a straight line or correct position.", ex:"The windows must align properly for good feng shui."},
+    {w:"skeptical", pos:"adjective", emoji:"🤨", def:"Having doubts; not easily convinced.", ex:"She was skeptical about feng shui at first."},
+    {w:"transcend", pos:"verb", emoji:"🚀", def:"To go beyond normal limits.", ex:"Great ideas can transcend cultures and time."},
+    {w:"vital", pos:"adjective", emoji:"❤️", def:"Extremely important or necessary.", ex:"Good sleep is vital for your health."},
+    {w:"anecdote", pos:"noun", emoji:"💬", def:"A short, interesting personal story.", ex:"He told a funny anecdote about his trip."},
+    {w:"frown upon", pos:"phrase", emoji:"🙁", def:"To disapprove of something.", ex:"Many teachers frown upon using phones in class."},
+    {w:"enhance", pos:"verb", emoji:"✨", def:"To improve the quality of something.", ex:"Good lighting can enhance a room."},
+    {w:"sharp", pos:"adjective", emoji:"🧠", def:"Quick, clever, and intelligent.", ex:"She's a sharp, peppy businesswoman."},
+    {w:"in the midst of", pos:"phrase", emoji:"🌀", def:"In the middle of (a situation or process).", ex:"I'm in the midst of important negotiations."},
+    {w:"work around", pos:"phrase", emoji:"🔧", def:"To find a way to deal with a problem.", ex:"We can work around the bad lighting."},
+    {w:"talk into", pos:"phrase", emoji:"🗣️", def:"To persuade someone to do something.", ex:"Master Sun talked me into keeping the property."},
+    {w:"catch off guard", pos:"phrase", emoji:"😮", def:"To surprise someone when they are not ready.", ex:"His question caught me off guard."},
+    {w:"hard-bitten", pos:"adjective", emoji:"💪", def:"Tough and very experienced.", ex:"Hard-bitten businessmen often tease him."},
 
     // ---- Unit 6 ----
-    {w:"debacle", pos:"noun", def:"A complete and total failure.", ex:"I worry there will be a huge debacle at work."},
-    {w:"overwhelm", pos:"verb", def:"To affect someone so strongly they can't cope.", ex:"I feel overwhelmed by so many messages."},
-    {w:"get a grip", pos:"phrase", def:"To control your emotions and calm down.", ex:"My friends tell me to get a grip and relax."},
-    {w:"tuck away", pos:"phrase", def:"To put something in a safe or hidden place.", ex:"Maybe he just tucked his phone away in his pocket."},
-    {w:"advocate", pos:"noun", def:"A person who publicly supports something.", ex:"I'm an advocate of online dating."},
-    {w:"anonymity", pos:"noun", def:"The state of being unknown or unnamed.", ex:"Some users choose anonymity to hide their identity."},
-    {w:"degrade", pos:"verb", def:"To lower the quality of something.", ex:"Constant texting can degrade real conversation."},
-    {w:"velocity", pos:"noun", def:"Speed; the rate something happens.", ex:"The velocity of online news is frightening."},
-    {w:"narcissistic", pos:"adjective", def:"Excessively self-centered and self-admiring.", ex:"Some people seem caring but are really narcissistic."},
-    {w:"solitude", pos:"noun", def:"The state of being alone (in a good way).", ex:"I treasure my solitude and time alone."},
-    {w:"superficial", pos:"adjective", def:"Shallow; not deep or meaningful.", ex:"A lot of my real dates felt empty and superficial."},
-    {w:"transparent", pos:"adjective", def:"Open and honest; nothing hidden.", ex:"How transparent should users be in their profiles?"},
-    {w:"persona", pos:"noun", def:"The image or character a person presents.", ex:"He created a confident online persona."},
-    {w:"collaborate", pos:"verb", def:"To work together with others.", ex:"We collaborate with each other in online games."}
+    {w:"debacle", pos:"noun", emoji:"💥", def:"A complete and total failure.", ex:"I worry there will be a huge debacle at work."},
+    {w:"overwhelm", pos:"verb", emoji:"🌊", def:"To affect someone so strongly they can't cope.", ex:"I feel overwhelmed by so many messages."},
+    {w:"get a grip", pos:"phrase", emoji:"✊", def:"To control your emotions and calm down.", ex:"My friends tell me to get a grip and relax."},
+    {w:"tuck away", pos:"phrase", emoji:"📥", def:"To put something in a safe or hidden place.", ex:"Maybe he just tucked his phone away in his pocket."},
+    {w:"advocate", pos:"noun", emoji:"📢", def:"A person who publicly supports something.", ex:"I'm an advocate of online dating."},
+    {w:"anonymity", pos:"noun", emoji:"🕶️", def:"The state of being unknown or unnamed.", ex:"Some users choose anonymity to hide their identity."},
+    {w:"degrade", pos:"verb", emoji:"📉", def:"To lower the quality of something.", ex:"Constant texting can degrade real conversation."},
+    {w:"velocity", pos:"noun", emoji:"🏎️", def:"Speed; the rate something happens.", ex:"The velocity of online news is frightening."},
+    {w:"narcissistic", pos:"adjective", emoji:"🪞", def:"Excessively self-centered and self-admiring.", ex:"Some people seem caring but are really narcissistic."},
+    {w:"solitude", pos:"noun", emoji:"🌙", def:"The state of being alone (in a good way).", ex:"I treasure my solitude and time alone."},
+    {w:"superficial", pos:"adjective", emoji:"💧", def:"Shallow; not deep or meaningful.", ex:"A lot of my real dates felt empty and superficial."},
+    {w:"transparent", pos:"adjective", emoji:"🪟", def:"Open and honest; nothing hidden.", ex:"How transparent should users be in their profiles?"},
+    {w:"persona", pos:"noun", emoji:"🦸", def:"The image or character a person presents.", ex:"He created a confident online persona."},
+    {w:"collaborate", pos:"verb", emoji:"🤝", def:"To work together with others.", ex:"We collaborate with each other in online games."}
 ];
 
 // MATCH IT — word -> definition (we use short versions)
@@ -137,7 +137,7 @@ $("#backBtn").addEventListener("click",()=>show("#hubScreen"));
 
 function openMode(mode){
     show("#stageScreen");
-    const titles={flashcards:"Flashcards",match:"Match It",opposites:"Opposites",forms:"Word Forms"};
+    const titles={flashcards:"🃏 Flashcards",match:"🔗 Match It",opposites:"↔️ Opposites",forms:"🧩 Word Forms"};
     $("#stageTitle").textContent=titles[mode];
     const stage=$("#stage"); stage.innerHTML="";
     if(mode==="flashcards") buildFlashcards(stage);
@@ -171,8 +171,8 @@ function buildFlashcards(stage){
                 </div>
             </div>
             <div class="fc-rate">
-                <button class="fc-btn review" id="fcReview"> Review again</button>
-                <button class="fc-btn know" id="fcKnow"> I knew it!</button>
+                <button class="fc-btn review" id="fcReview">😅 Review again</button>
+                <button class="fc-btn know" id="fcKnow">😎 I knew it!</button>
             </div>
             <div class="flash-controls">
                 <button class="fc-nav" id="fcPrev">←</button>
@@ -212,7 +212,7 @@ function buildFlashcards(stage){
         state.flashKnew=knew; state.flashTotal=cards.length;
         markDone("flashcards");
         stage.innerHTML=`<div class="complete-banner">
-            <div class="big">Nice work! </div>
+            <div class="big">Nice work! 🃏</div>
             <p>You reviewed all <strong>${cards.length}</strong> cards and knew <strong>${knew}</strong> of them.</p>
             <button class="stage-done-btn" onclick="backToHub()">Back to menu →</button>
         </div>`;
@@ -287,7 +287,7 @@ function buildMatch(stage){
         markDone("match");
         setTimeout(()=>{
             stage.innerHTML=`<div class="complete-banner">
-                <div class="big">All matched! </div>
+                <div class="big">All matched! 🔗</div>
                 <p>Perfect — you connected all ${set.length} words to their meanings.</p>
                 <button class="stage-done-btn" onclick="backToHub()">Back to menu →</button>
             </div>`;
@@ -336,7 +336,7 @@ function buildOpposites(stage){
     function finishOpp(){
         markDone("opposites");
         stage.innerHTML=`<div class="complete-banner">
-            <div class="big">Done! </div>
+            <div class="big">Done! ↔️</div>
             <p>You got <strong>${correct} / ${qs.length}</strong> opposites right.</p>
             <button class="stage-done-btn" onclick="backToHub()">Back to menu →</button>
         </div>`;
@@ -393,7 +393,7 @@ $("#finishBtn").addEventListener("click",()=>{
     const msg=$("#finishMsg");
     const acts=Object.keys(state.completed).filter(k=>state.completed[k]).join(", ");
     const selfCheck = (state.flashKnew!=null) ? `Flashcards: knew ${state.flashKnew}/${state.flashTotal}` : "—";
-    msg.className="finish-msg"; msg.textContent="Sending... ";
+    msg.className="finish-msg"; msg.textContent="Sending... 💾";
 
     if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.includes("PASTE_YOUR")){
         msg.className="finish-msg err";
@@ -416,7 +416,7 @@ $("#finishBtn").addEventListener("click",()=>{
     .then(res=>{
         if(res.success){
             msg.className="finish-msg ok";
-            msg.innerHTML=` Great job, <strong>${state.name}</strong>! Your participation was saved. (${state.points} points)`;
+            msg.innerHTML=`✅ Great job, <strong>${state.name}</strong>! Your participation was saved. (${state.points} points)`;
             $("#finishBtn").disabled=true;
             bigBurst();
         }else{throw new Error();}
